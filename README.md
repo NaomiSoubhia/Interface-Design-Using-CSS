@@ -7,6 +7,8 @@ This README summarizes the content covered in the lesson slides about **CSS Sele
 
 ---
 
+### Lesson 1
+
 ## 1. Named Selectors
 
 Named selectors target HTML elements directly by their tag name.
@@ -193,4 +195,55 @@ Attribute selectors target elements based on attributes and their values.
 CSS selectors allow precise targeting of HTML elements based on type, class, ID, attributes, structure, and state. Mastering selectors is essential for writing clean, efficient, and maintainable CSS.
 
 ---
+
+
+### Lesson 2 – CSS Typography (Exam Summary)
+
+## Typography Basics
+Typography controls how text appears and improves readability, usability, and visual hierarchy.
+
+## CSS Reset vs Normalization
+- Reset CSS removes all browser default styles (e.g., Eric Meyer’s Reset).
+- Normalize CSS makes browser styles consistent while keeping useful defaults.
+
+## Fonts
+### Web-Safe Fonts
+Fonts commonly available across systems, such as Arial, Verdana, and Georgia.
+
+### Font Stacks
+Fallback fonts used when the primary font is unavailable.
+```css
+font-family: "Helvetica Neue", Arial, sans-serif;
+Font Embedding
+Custom fonts loaded using @font-face.
+@font-face {
+  font-family: "MyFont";
+  src: url("myfont.woff2");
+}
+```
+
+# Visual Hierarchy
+Visual hierarchy communicates importance using size, weight, and spacing.
+### Typographic scale example:
+
+h1: 48px
+h2: 36px
+h3: 24px
+p: 14px
+
+# Readability
+Line spacing (leading) improves readability.
+
+line-height: 1.5;
+Letter spacing (tracking) controls space between characters.
+letter-spacing: 0.2em;
+Line length (measure) should be between 45–75 characters per line.
+width: 80vw;
+
+# Whitespace & Alignment
+Whitespace improves clarity and focus.
+Text alignment options include left, right, center, and justify.
+Avoid low contrast and poorly spaced justified text.
+Summary
+Good CSS typography improves readability, consistency, and visual hierarchy through proper font choices, spacing, contrast, and layout.
 
