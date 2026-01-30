@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+h2{
+font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  transform: scaleY(2);
+  letter-spacing: 0.4em;
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+header p{
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    word-spacing: 18px; 
+    transform: scaleY(1.);
+    text-justify: auto;
+    line-height: 1.4;
+}

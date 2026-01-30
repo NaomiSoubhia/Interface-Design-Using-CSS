@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+
+html {
+	box-sizing: border-box;
+    font-size: 100%;
+	line-height: 1.4;
+}
+
+
+
+main section {
+	/* Width */
+	width: 50%;
+	/* Center*/
+	margin: 0 auto;
+	/* Set the flex container for the main */
+	display: flex;
+	/* Flex-direction to column  */
+	flex-direction: column;
+
+
+
+    
+}
+
+main aside{
+    /* Width */
+	width: 30%;
+    background-position: cover;
+	/* Center*/
+	margin: 0 auto;
+	/* Set the flex container for the main */
+	display: flex;
+	/* Flex-direction to column  */
+	flex-direction: column;
+    background-image: url("../images/cover.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+
+
+
+}
+
+main div:first-child{
+    width: 90%;
+}
+
+main{
+    /*Border and background*/
+      border: 8px solid transparent;
+      background:
+     linear-gradient(180deg, #464646, #171717) padding-box,
+    linear-gradient(
+      135deg,
+      #ff0080,
+      #ff8c00,
+      #ffe600,
+      #00eaff,
+      #8a2be2
+    ) border-box;
+    color: #fff;
+
+    padding-bottom:2rem;
+    text-align: center;
+    	/* Set the flex container for the main */
+	display: flex;
+	/* Flex-direction to column  */
+	flex-direction: column;
+
+}
+
+
+
+h1{
+font-size: 4.8rem;
+font-family: "Orbitron", sans-serif;
+margin: 5rem 0;
+}
+
+p{
+    padding: 0;
+    line-break: auto;
+    hyphens: auto;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    font-size: 1.2rem;
+    width: 90% 10%;
+
+}
+
+footer{
+    background-color: #fff;
+    padding: 1rem 0;
+}
+
+main div{
+        	/* Set the flex container for the main */
+	display: flex;
+	/* Flex-direction to column  */
+	flex-direction: row;
+    width: 100%;
+}
