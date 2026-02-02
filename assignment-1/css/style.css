@@ -7,7 +7,9 @@ html {
 	box-sizing: border-box;
     font-size: 100%;
 	line-height: 1.4;
+     font-family: "Montserrat", sans-serif;
 }
+
 
 
 
@@ -26,23 +28,11 @@ main section {
     
 }
 
-main aside{
-    /* Width */
-	width: 30%;
-    background-position: cover;
-	/* Center*/
-	margin: 0 auto;
-	/* Set the flex container for the main */
-	display: flex;
-	/* Flex-direction to column  */
-	flex-direction: column;
-    background-image: url("../images/cover.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: auto;
 
-
-
+main img{
+    width: 20%;
+    margin: 1rem auto;
+    
 }
 
 main div:first-child{
@@ -51,17 +41,19 @@ main div:first-child{
 
 main{
     /*Border and background*/
-      border: 8px solid transparent;
-      background:
-     linear-gradient(180deg, #464646, #171717) padding-box,
-    linear-gradient(
-      135deg,
-      #ff0080,
-      #ff8c00,
-      #ffe600,
-      #00eaff,
-      #8a2be2
-    ) border-box;
+border-right: 5px solid;
+border-left: 5px solid;
+border-image: linear-gradient(
+  135deg,
+  #ff0080,
+  #ff8c00,
+  #ffe600,
+  #00eaff,
+  #8a2be2
+) 1;
+
+background-color:#080808;
+ 
     color: #fff;
 
     padding-bottom:2rem;
@@ -75,10 +67,32 @@ main{
 
 
 
-h1{
-font-size: 4.8rem;
+h2{
+font-size: 2.25rem;
 font-family: "Orbitron", sans-serif;
-margin: 5rem 0;
+margin: 5rem 0 1rem 0;
+}
+
+header div img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    animation: neonPulse 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+    0% {
+        filter:
+            
+            drop-shadow(0 0 12px #00eaff);
+    }
+    100% {
+        filter:
+            
+            drop-shadow(0 0 28px #00eaff);
+    }
 }
 
 p{
@@ -101,6 +115,85 @@ main div{
         	/* Set the flex container for the main */
 	display: flex;
 	/* Flex-direction to column  */
-	flex-direction: row;
+	flex-direction: column;
     width: 100%;
+}
+
+em{
+    font-family: "Orbitron", sans-serif;
+    color: #CF238D;
+    font-weight: 700;
+}
+
+em:hover{
+    transition-timing-function:ease-in-out ;
+    letter-spacing: 2px;
+}
+
+em::selection{
+    color: #00eaff;
+}
+
+header{
+    background-image: url("../images/avicii.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative ;
+    opacity: 0.98;
+    
+}   
+
+header p{
+    
+    color: #000;
+    position: absolute;
+}
+
+
+/*NAVIGATION MENU*/
+ul{
+   display: flex;          /* Align items horizontally */
+   align-items: center;    /* Center items vertically */
+   width: 100%;
+}
+
+ul li {
+   list-style: none;       /* Remove bullet points */
+   display: inline-block;
+   margin-left: 2%;
+}
+
+/* Menu links */
+ ul li a {
+   text-decoration: none;
+   color: #fff;
+}
+
+/* Menu bar container */
+nav{
+   width: 100%;
+   position: fixed;        /* Keeps menu visible when scrolling */
+   display: flex;
+   background-color: #000;
+   z-index: 3;             /* Stay on top of other elements */
+   height: 10vh;
+   padding: 0;
+   
+}
+
+/* Logo position and styling */
+nav aside{
+   width: 18%;
+}
+
+ nav aside img{
+   margin-left: 15%;
+   width: 20%;       
+}
+
+nav div{
+   text-align: right;
+   width: 75%;
 }
