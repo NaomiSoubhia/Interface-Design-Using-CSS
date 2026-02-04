@@ -30,15 +30,12 @@ main section {
 	display: flex;
 	/* Flex-direction to column  */
 	flex-direction: column;
-
-
-
     
 }
 
 
 main img{
-    width: 20%;
+    width: 50%;
     margin: 1rem auto;
     
 }
@@ -46,19 +43,9 @@ main img{
 
 
 main article{
-    /*Border and background*/
-border-right: 4px solid;
-border-left: 4px solid;
-border-image: linear-gradient(
-  135deg,
-  #ff0080,
-  #ff8c00,
-  #ffe600,
-  #00eaff,
-  #8a2be2
-) 1;
+
 position: relative;
-z-index: -1;
+z-index: 1;
 background-color:#080808;
  
     color: #fff;
@@ -124,6 +111,8 @@ iframe{
     
 }
 
+
+
 header > div:nth-of-type(2) {
     width: 35%;
     max-width: 90%;       /* responsive limit */
@@ -139,7 +128,7 @@ header > div:nth-of-type(2) {
 }
 
 header > div:nth-of-type(2) p {
-    margin: 0;
+
     width: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -175,11 +164,10 @@ header > div:nth-of-type(2) p {
 }
 
 p{
-    padding: 0;
     line-break: auto;
     hyphens: auto;
     text-align: center;
-    margin: 1rem 0 0 0;
+    padding: 1rem 0 0 0;
     font-size: 1.2rem;
     width: 90% 10%;
 
@@ -187,12 +175,13 @@ p{
 }
 
 footer{
-    background-color: #fff;
+    background-color: #000;
+
     height: 20vh;
 }
 
 
-section p em:nth-of-type(odd){
+em:nth-of-type(odd){
         font-family: "Orbitron", sans-serif;
     
     filter:drop-shadow(0 0 12px #5377EE);
@@ -201,7 +190,7 @@ section p em:nth-of-type(odd){
 animation-timeline:view();
 animation-range: entry 10% cover 50vh;
 }
-section p em{
+ em{
     font-family: "Orbitron", sans-serif;
     
     filter: drop-shadow(0 0 12px #F52875);
@@ -219,7 +208,7 @@ section p em::selection{
 
 header{
     background-image: url("../images/avicii.jpg");
-    height: 200vh;
+    min-height: 200vh;
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -241,10 +230,13 @@ ul{
    z-index: 99;
 }
 
+
+
+
 ul li {
    list-style: none;       /* Remove bullet points */
    display: inline-block;
-   margin-left: 2%;
+   
    z-index: 99;
 }
 
@@ -253,6 +245,7 @@ ul li {
    text-decoration: none;
    color: #fff;
    z-index: 99;
+   margin-right: 2em;
 }
 
 /* Menu bar container */
@@ -269,22 +262,28 @@ nav{
 }
 
 /* Logo position and styling */
-nav aside{
+nav ul li:nth-child(1) {
    width: 18%;
    z-index: 99;
 }
 
- nav aside img{
+ nav li:nth-child(1) img{
    margin-left: 15%;
    width: 20%;       
 }
 
-nav div{
+nav ul li:nth-child(2){
    text-align: right;
-   width: 75%;
+   width: 70%;
+   display: flex;
+   flex-direction: row;
    z-index: 99;
+   
 }
 
+
+
+/*main*/
 
 main div{
     background-color:#080808;
@@ -301,7 +300,7 @@ article div:last-child{
 
 main > div:last-child { 
  background-image: url("../images/music.webp");
- height: 80vh;
+ min-height: 80vh;
  width: 100%;
  background-attachment: fixed;
  opacity: 0.9;
@@ -325,6 +324,8 @@ main > div:last-child > div{
     margin: 0 auto;
         justify-content: center;
     align-items: center;
+
+    
 }
 
 main > div:last-child > div img{
@@ -334,7 +335,26 @@ main > div:last-child > div img{
     align-items: center;
         animation: videoUp both;
     animation-timeline: view(50vh 20%);
-    border-right: 4px solid;
+
+    margin-top: 1rem;
+
+}
+
+
+main > div:last-child > div p{
+    width: 50%;
+    text-align: left;
+    position: relative;
+    animation: videoUp both;
+     animation-timeline: view(50vh 20%);
+     
+
+}
+
+main > div:last-child > div > img,
+main article
+{
+        border-right: 4px solid;
 border-left: 4px solid;
 border-image: linear-gradient(
   135deg,
@@ -344,18 +364,5 @@ border-image: linear-gradient(
   #00eaff,
   #8a2be2
 ) 1;
-
-margin-top: 2rem;
-
-}
-
-
-main > div:last-child > div p{
-    width: 50%;
-    text-align: left;
-    margin: 0.5rem;
-    animation: videoUp both;
-     animation-timeline: view(50vh 20%);
-     
 
 }
