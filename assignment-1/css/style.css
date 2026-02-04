@@ -47,8 +47,8 @@ main img{
 
 main article{
     /*Border and background*/
-border-right: 5px solid;
-border-left: 5px solid;
+border-right: 4px solid;
+border-left: 4px solid;
 border-image: linear-gradient(
   135deg,
   #ff0080,
@@ -135,7 +135,7 @@ header > div:nth-of-type(2) {
     padding-right: 1rem;
     
     animation: videoUp both;
-    animation-timeline: view(50% 10%);
+    animation-timeline: view(10vh 20%);
 }
 
 header > div:nth-of-type(2) p {
@@ -188,7 +188,7 @@ p{
 
 footer{
     background-color: #fff;
-    
+    height: 20vh;
 }
 
 
@@ -299,4 +299,63 @@ article div:last-child{
 
 
 
+main > div:last-child { 
+ background-image: url("../images/music.webp");
+ height: 80vh;
+ width: 100%;
+ background-attachment: fixed;
+ opacity: 0.9;
+ background-blend-mode: overlay;
+    /* Center*/
+    /* Set the flex container for the main */
+    display: flex;
+    /* Flex-direction to column  */
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+ }
 
+main > div:last-child > div{
+ /* Set the flex container for the main */
+    display: flex;
+    /* Flex-direction to column  */
+    flex-direction: row;
+    background: none;
+    width: 90%;
+    margin: 0 auto;
+        justify-content: center;
+    align-items: center;
+}
+
+main > div:last-child > div img{
+    width: 40%;
+     margin-left: auto;
+         justify-content: center;
+    align-items: center;
+        animation: videoUp both;
+    animation-timeline: view(50vh 20%);
+    border-right: 4px solid;
+border-left: 4px solid;
+border-image: linear-gradient(
+  135deg,
+  #ff0080,
+  #ff8c00,
+  #ffe600,
+  #00eaff,
+  #8a2be2
+) 1;
+
+margin-top: 2rem;
+
+}
+
+
+main > div:last-child > div p{
+    width: 50%;
+    text-align: left;
+    margin: 0.5rem;
+    animation: videoUp both;
+     animation-timeline: view(50vh 20%);
+     
+
+}
