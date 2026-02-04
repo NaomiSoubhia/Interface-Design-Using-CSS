@@ -11,7 +11,15 @@ html {
 }
 
 
-
+main {
+    display: flex;             
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;        
+    margin: 0 auto;
+    
+    
+}
 
 main section {
 	/* Width */
@@ -67,6 +75,7 @@ background-color:#080808;
 
 
 
+
 h2{
 font-size: 2.25rem;
 font-family: "Orbitron", sans-serif;
@@ -94,10 +103,6 @@ header div img{
 iframe{
     width: 100%;
     height: 20rem;
-    /*Scroll based animations we use both value for better control and smother experience*/
-    animation: videoUp both;
-    animation-timeline: view(20% 10%);
-    /*view(when the animation finishes, when the animations starts)*/
 }
 
 @keyframes videoUp {
@@ -131,7 +136,10 @@ header > div:nth-of-type(2) {
     transform: translateY(-50%);
     text-align: left;
     right:5%;
-    color: #fff;
+        /*Scroll based animations we use both value for better control and smother experience*/
+    animation: videoUp both;
+    animation-timeline: view(90vh 10%);
+    /*view(when the animation finishes, when the animations starts)*/
 
 }
 
@@ -152,11 +160,7 @@ header > div:nth-of-type(2) p{
     padding-right: 1rem;
     position: relative;
     text-align: left;
-        /*Scroll based animations we use both value for better control and smother experience*/
-    animation: textUp both;
-animation-timeline:view();
-animation-range: entry 0% cover 20vh;
-   
+
     
 }
 
@@ -208,7 +212,7 @@ section p em{
     font-weight: 700;
     animation: textUp both;
 animation-timeline:view();
-animation-range: entry 20% cover 60vh;
+animation-range: entry 10% cover 50vh;
     
 }
 
@@ -224,7 +228,7 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative ;
-    opacity: 0.98;
+    background-color: rgba(0,0,0,0.98);
     flex-wrap: wrap;
     display: flex;
 
@@ -237,18 +241,21 @@ ul{
    display: flex;          /* Align items horizontally */
    align-items: center;    /* Center items vertically */
    width: 100%;
+   z-index: 99;
 }
 
 ul li {
    list-style: none;       /* Remove bullet points */
    display: inline-block;
    margin-left: 2%;
+   z-index: 99;
 }
 
 /* Menu links */
  ul li a {
    text-decoration: none;
    color: #fff;
+   z-index: 99;
 }
 
 /* Menu bar container */
@@ -260,12 +267,14 @@ nav{
    z-index: 99;             /* Stay on top of other elements */
    height: 10vh;
    padding: 0;
+   opacity: 1;
    
 }
 
 /* Logo position and styling */
 nav aside{
    width: 18%;
+   z-index: 99;
 }
 
  nav aside img{
@@ -276,15 +285,19 @@ nav aside{
 nav div{
    text-align: right;
    width: 75%;
+   z-index: 99;
 }
 
 
 main div{
     background-color:#080808;
     margin: 0;
+    
 }
 
-
+article div:last-child{
+    padding-bottom: 2rem;
+}
 
 
 
