@@ -125,24 +125,27 @@ iframe{
 }
 
 header > div:nth-of-type(2) {
-    /* Suas alterações aqui */
     width: 35%;
-    height: auto;
+    max-width: 90%;       /* responsive limit */
     color: #fff;
     font-size: 18px;
-    position: absolute;
-    top: 70%;
-    right: 0;
-    transform: translateY(-50%);
+    position: relative;   /* changed from absolute */
+    margin: 100vh 5rem 0 auto; /* pushes it down visually */
     text-align: left;
-    right:5%;
-        /*Scroll based animations we use both value for better control and smother experience*/
+    padding-right: 1rem;
+    
     animation: videoUp both;
-    animation-timeline: view(90vh 10%);
-    /*view(when the animation finishes, when the animations starts)*/
-
+    animation-timeline: view(50% 10%);
 }
 
+header > div:nth-of-type(2) p {
+    margin: 0;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-align: left;
+}
 /* text appear animation: https://www.youtube.com/watch?v=16PncZlSNds&t=115s*/
 @keyframes textUp {
     from{
@@ -155,14 +158,7 @@ header > div:nth-of-type(2) {
     }
 }
 
-header > div:nth-of-type(2) p{
-    color: #fff;
-    padding-right: 1rem;
-    position: relative;
-    text-align: left;
 
-    
-}
 
 /* Shadow pulse animation: https://www.youtube.com/shorts/pcZzirFeFyg?feature=share*/
 @keyframes neonPulse {
@@ -231,6 +227,7 @@ header{
     background-color: rgba(0,0,0,0.98);
     flex-wrap: wrap;
     display: flex;
+    flex-direction: column; 
 
 }   
 
