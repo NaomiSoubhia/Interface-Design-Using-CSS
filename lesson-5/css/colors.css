@@ -2,7 +2,7 @@
 html {
 	box-sizing: border-box;
 }
-	*, *:before, *:after {
+	*, *::before, *::after {
 	box-sizing: inherit;
 }
 html {
@@ -20,9 +20,13 @@ body {
 header {
 	/* STEP 1a: Go to https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */
 	/* STEP 1b: Select a HUE using the Hue Slider */
+	
 	/* STEP 1c: De-Saturate the colour a bit, reduce the Lightness, and make the colour slightly transparent by adjusting the Alpha. */
+	
 	/* STEP 1d: Copy the resulting RGBa value and replace the background-color below */
-	background-color: black;
+	/* background-color: black; */
+
+	background-color:rgb(129 60 154 / 0.710);
 	padding: 1% 10%;
 }
 header h1 {
@@ -30,17 +34,18 @@ header h1 {
 	letter-spacing: 0.1em;
 	color: white;
 	/* STEP 3: Soften the <h1> element text using the opacity property */
-
+	/* opacity: 0.5;	 */
 }
 main {
 	padding: 0 10%;
 }
 main h2 {
 	/* STEP 2: Set the <h2> inside the <main> to the same transparent purple, but use the HSLa colour syntax, instead */
-
+	
 	font-size: 500%;
 	margin: 0;	
-	color: white;
+	color: lab(38.26% 45.07 -38.98 / 0.71);
+	
 }
 main p {
 	margin-top: 0;
@@ -51,9 +56,11 @@ footer {
 footer p {
 	font-size: 60%;
 	/* STEP 4: Set the <footer> element text to the same purple as in step 1 and 2, using a combination of hexadecimal color syntax and opacity. */
-	color: white;
+	color: oklab(0.48699 0.11322 -0.10906 / 0.710);
 }
 
 /* STEP 5: Adjust the HUE of the background-color of the <header>, the colour of the <h2>, and the colour of the <footer> text to a different value - note that this is more difficult with HEX and RGB colour notation */
+
+
 
 /* STEP 6: Convert the footer p element to CIELAB color space using a conversion utility like http://colormine.org/convert/rgb-to-lab */

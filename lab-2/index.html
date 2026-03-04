@@ -29,9 +29,18 @@ to match as closely as you can with the colors
 on the SECOND paint swatch card provided.
 -------------------------------------------------- */
 	#rgba div:nth-of-type(1) {
-		background-color: red;
+		background-color: rgb(38, 27, 55);
 	}
 	/* ...and so on... */
+	#rgba div:nth-of-type(2) {
+		background-color: rgb(118, 101, 125);
+	}
+	#rgba div:nth-of-type(3) {
+		background-color: rgb(64, 57, 86);
+	}
+	#rgba div:nth-of-type(4) {
+		background-color: rgb(70, 65, 72);
+	}
 
 /* STEP 3: Set each color in hsla format
 to match as closely as you can with the colors
@@ -50,7 +59,11 @@ produce an exact rendition of the swatch colors on the FOURTH card provided.
 (https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
 -------------------------------------------------- */
 	#keyword div:nth-of-type(1) {
-		background-color: red;
+		background-color: darkred;
+		filter: grayscale(80%);
+		filter: brightness(50%);
+		filter: contrast(15%);
+		
 	}
 	/* ...and so on... */
 
