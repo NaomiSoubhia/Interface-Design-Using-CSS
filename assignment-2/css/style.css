@@ -1,2 +1,80 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#container{
+	font-family: "Lora", serif;
+	display: grid;
+	grid-template-areas: "header "
+						"main";
+					 
+}
+
+header p{
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  grid-area: subtitle;
+  margin: 0.5rem;
+  padding: 0;
+	
+}
+
+header h1{
+	text-transform:lowercase;
+	font-size: 100px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	grid-area: title;
+	color: black;
+	border-top: 0.8px solid #474747;
+	line-height: 75px;
+	margin: 0;
+	
+}
+
+header h1 em{
+    color: #be1f2d;
+	font-style: normal;
+}
+
+header{
+	display: grid;
+    grid-template-areas: 
+        "subtitle"
+        "title";
+	grid-area:header;
+	margin-top: 1rem;
+}
+
+
+
+main article:first-of-type{
+display: grid;
+grid-area: article1;
+}
+
+main article:last-of-type{
+	display: grid;
+grid-area: article2;
+}
+
+main{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "aside1 article1"
+						"aside2 article2";
+	grid-area: main;
+	
+}
+
+main aside:first-of-type{
+	display:grid;
+	grid-area: aside1;
+}
+
+main aside:last-of-type{
+	display:grid;
+	grid-area: aside2;
+}
