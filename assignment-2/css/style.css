@@ -29,7 +29,7 @@ header p {
 /* main title styling */
 header h1 {
 	text-transform: lowercase;
-	font-size: 124px;
+	font-size: 7.75rem;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	grid-area: title;
@@ -77,7 +77,7 @@ main article:first-of-type h2 {
 	grid-column: 1;
 	grid-row: 1;
 	font-weight: 600;
-	font-size: 48px;
+	font-size: 3rem;
 	letter-spacing: 0.5px;
 	color: #be1f2d;
 	margin-top: 5rem;
@@ -293,12 +293,12 @@ aside:last-of-type h2::before {
 
 
 /* second aside heading */
-aside:last-of-type h2 {
+aside:last-of-type h2:first-line, aside:last-of-type h2 {
 	display: flex;
 	align-items: center;
 	color: #be1f2d;
 	letter-spacing: 0px;
-	font-size: 30px;
+	font-size: 2rem;
 	font-weight: 600;
 	line-height: 0.4;
 	margin: 0;
@@ -308,6 +308,13 @@ aside:last-of-type h2 {
 	
 }
 
+/* style last aside h2 */
+aside:last-of-type h2 {
+	line-height: 1;
+	margin-bottom: -2rem;
+}
+
+/* style list items inside last aside */
 aside:last-of-type li {
 	display: flex;
 	flex-direction: column;
@@ -317,19 +324,85 @@ aside:last-of-type li {
 	
 }
 
+/* style paragraph inside list item */
 aside:last-of-type li p{
 	display: block;
 	margin-left: 0rem;
 	margin-top: 0;
 }
 
+/* style paragraphs in last aside */
 aside:last-of-type p{
 	line-height: 2rem;
 	margin: 0 2rem;
 }
 
+/* position h3 inside list */
 aside ul li h3 {
 	position: relative;
 	margin: 0;
 }
 
+/* tablet and smaller layout */
+@media (max-width: 768px){
+
+/* main grid layout for tablet */
+main {
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-areas: "article1"
+	"aside1"
+		"aside1 "
+		"article2"
+		"aside2 ";
+	grid-area: main;
+	border-left: 0.8px solid #000;
+	margin-left: 1rem;
+	border-bottom: 0.8px solid #000;
+}
+
+/* image inside first article */
+main article:first-of-type img {
+	width: 75%;
+	height: auto;
+	margin: 2rem 0;
+	grid-area: imgDog;
+	
+}
+
+/* grid layout for first article */
+main article:first-of-type {
+	display: grid;
+
+		grid-template-areas: "imgDog"
+						"dogTitle"
+						 "dogText"
+						 "textSlopes";
+	grid-template-columns: 1fr ;
+}
+
+/* title area in first article */
+main article:first-of-type h2 {
+	grid-area: dogTitle;
+}
+
+/* paragraph area in first article */
+main article:first-of-type p {
+	grid-area: dogText;
+}
+
+/* container layout */
+#container {
+	font-family: "Lora", serif;
+	display: grid;
+	grid-template-areas: "header "
+		"main";
+	
+}
+
+/* full width main */
+main{
+	width: 100%;
+}
+
+}
