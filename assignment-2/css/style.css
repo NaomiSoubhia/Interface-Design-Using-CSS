@@ -193,9 +193,9 @@ main aside:last-of-type {
 }
 
 
-main article img{
+main article:last-of-type img {
 	animation: img-appear both;
-	animation-timeline: view();
+	animation-timeline: scroll();
 }
 
 /* animation https://www.youtube.com/watch?v=16PncZlSNds */
@@ -311,7 +311,7 @@ aside:last-of-type h2::before {
 	color: #000;
 	margin-bottom: 40px ;
 	animation: AutoRotate;
-	animation-timeline: view();
+	animation-timeline: scroll();
 }
 
 @keyframes AutoRotate{
