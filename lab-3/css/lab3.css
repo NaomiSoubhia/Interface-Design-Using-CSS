@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Box-sizing reset (https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: "Open Sans", sans-serif;
+}
+
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+div ul {
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+div li + li{
+	margin: 0 0 0 5px;
+}
+
+div li a {
+	display: block;
+	padding: 0.5em;
+	background: #ccc;
+	border-radius: 5px 5px 0 0;
+	text-decoration: none;
+	color: #000;
+}
+
+main {
+	background: #fff;
+}
+
+div[role="tabpanel"] {
+	padding: 1em;
+	line-height: 1.5;
+	border: 2px solid black;
+	position: relative;
+	display: none;
+	top: -3px;
+}
+
+div[role="tabpanel"]:target {
+	display: block;
+
+}
+
+a.active {
+	background: #fff;
+	border: 2px solid black;
+	border-bottom: none;
+	position: relative;
+	z-index: 1;
+
+}
+
+
+
+
