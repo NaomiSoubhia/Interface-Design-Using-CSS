@@ -47,6 +47,8 @@ main {
 	background: #fff;
 }
 
+
+
 div[role="tabpanel"] {
 	padding: 1em;
 	line-height: 1.5;
@@ -56,10 +58,21 @@ div[role="tabpanel"] {
 	top: -3px;
 }
 
+
+/*First starts block*/
+div[role="tabpanel"]:not(:has(:target)) div[role="tabpanel"]:first-of-type {
+	display: block;
+}
+
 div[role="tabpanel"]:target {
 	display: block;
 
+
+
 }
+
+
+
 
 a.active {
 	background: #fff;
