@@ -293,6 +293,46 @@ blockquote {
 }
 
 
+/* FEATURE LIST*/
+.features li {
+  margin-bottom: 10px;
+}
+
+
+aside.profile,
+aside#styles {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: top;
+
+  width: 45%;
+  margin: 20px 2%;
+}
+
+.page-footer {
+  background: #0f0f14;
+  color: #ddd;
+  padding: 60px 20px;
+  margin-top: 60px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* container central */
+.page-footer .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  gap: 25px;
+}
+
+/* paragraphs */
+.page-footer p {
+  color: #bbb;
+  line-height: 1.7;
+  margin: 0;
+}
 
 
 
