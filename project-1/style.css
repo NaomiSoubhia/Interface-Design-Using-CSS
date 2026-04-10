@@ -192,7 +192,7 @@ nav a {
   max-width: 1100px;
   margin: 20px auto 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr ;
   gap: 20px;
 }
 
@@ -208,4 +208,51 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+
+#files a {
+  display: inline-block;
+  padding: 12px 18px;
+  margin: 6px 0;
+  background: linear-gradient(135deg, #7e63b2, #d28ab6);
+  color: #fff;
+
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+
+  box-shadow: 0 8px 20px rgba(123, 63, 228, 0.25);
+
+  position: relative;
+  overflow: hidden;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* hover effect */
+#files a:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(255, 110, 199, 0.35);
+}
+
+/* click effect */
+#files a:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+
+/* animation on hover */
+#files a:hover::before {
+  animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+  from {
+    left: -75%;
+  }
+  to {
+    left: 130%;
+  }
+}
+
 
