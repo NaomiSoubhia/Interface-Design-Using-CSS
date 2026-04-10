@@ -255,4 +255,44 @@ nav a {
   }
 }
 
+/* TITLES */
+ h2,h4,h3 {
+  font-size: 1.6rem;
+  position: relative;
+}
+
+
+h2::after, h4::after, h3::after {
+  content: "✦ ";
+  color: #ff6ec7;
+  margin-right: 6px;
+  font-size: 0.9em;
+  width: 30px;
+  height: 3px;
+  background: #ff6ec7;
+  display: block;
+  margin-top: 6px;
+}
+
+/* LINKS */
+a {
+  color: #7b3fe4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #ff6ec7;
+}
+
+/* BLOCKQUOTE*/
+blockquote {
+  border-left: 3px solid #ff6ec7;
+  padding-left: 12px;
+  font-style: italic;
+}
+
+
+
+
 
