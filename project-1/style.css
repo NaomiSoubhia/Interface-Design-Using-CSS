@@ -400,3 +400,99 @@ aside#styles {
 }
 
 
+@media (max-width: 800px) {
+
+  /*  HEADER */
+  header {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  header h1 {
+    position: static;
+    transform: none;
+    font-size: clamp(2.5rem, 12vw, 5rem);
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  header h2 {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+    left: auto;
+  }
+
+  header p {
+    position: static;
+    text-align: center;
+    margin-top: 15px;
+    max-width: 100%;
+  }
+
+  header .link-github {
+    position: static;
+    margin: 20px auto 0;
+    display: block;
+    transform: none;
+    width: 5rem;
+  }
+
+  .skip-link {
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  /*  NAV */
+  nav {
+    position: static;
+    margin: 0;
+
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    margin: 0;
+  }
+
+  nav ul li a{
+    color: #000;
+    margin: 0;
+  }
+
+  /*  GRID / SECTIONS */
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  #contribute {
+    grid-template-columns: 1fr;
+  }
+
+  .container ul {
+    grid-template-columns: 1fr;
+  }
+
+  /*  ASIDES */
+
+  aside.profile,
+  aside#styles {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  /*  FOOTER */
+
+  .page-footer ul {
+    grid-template-columns: 1fr;
+  }
+}
